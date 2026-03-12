@@ -1,5 +1,17 @@
-# SpaIM
-[![DOI](https://zenodo.org/badge/801848419.svg)](https://doi.org/10.5281/zenodo.16688132)
+<div align="center">
+    <h1>SpaIM</h1>
+    <h3>Single-cell Spatial Transcriptomics Imputation via Style Transfer</h3>
+    <p align="center">
+        <a href="https://www.nature.com/articles/s41467-025-63185-9"><img src="https://img.shields.io/badge/Journal-Nature_Communications-blue.svg" alt="Journal"></a>
+        <a href="https://doi.org/10.1038/s41467-025-63185-9"><img src="https://img.shields.io/badge/DOI-10.1038/s41467--025--63185--9-B31B1B.svg" alt="DOI"></a>
+        <a href="https://doi.org/10.5281/zenodo.16688132"><img src="https://zenodo.org/badge/801848419.svg" alt="Zenodo"></a>
+    </p>
+    <h4>
+        📄 <a href="https://www.nature.com/articles/s41467-025-63185-9">Read the Paper in Nature Communications</a>
+    </h4>
+</div>
+
+---
 
 ## Single-cell Spatial Transcriptomics Imputation via Style Transfer  [[paper]](https://www.nature.com/articles/s41467-025-63185-9)
 
