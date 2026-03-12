@@ -13,8 +13,6 @@
 
 ---
 
-## Single-cell Spatial Transcriptomics Imputation via Style Transfer  [[paper]](https://www.nature.com/articles/s41467-025-63185-9)
-
 We introduce SpaIM, a novel style transfer learning model that leverages scRNA-seq data to accurately impute unmeasured gene expressions in spatial transcriptomics (ST) data. SpaIM separates scRNA-seq and ST data into data-agnostic contents and data-specific styles, capturing commonalities and unique differences, respectively. By integrating scRNA-seq and ST strengths, SpaIM addresses data sparsity and limited gene coverage, outperforming existing methods across 53 diverse ST datasets. It also enhances downstream analyses like ligand-receptor interaction detection, spatial domain characterization, and differentially expressed gene identification.
 ![workflow](./data/Fig1.png)
 
