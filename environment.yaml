@@ -16,7 +16,7 @@ dependencies:
     - scikit-image
     - matplotlib==3.9.3
     - opencv_python==4.10.0.84
-    - metrics==0.3.3
+    - metrics==0.0.2
     - imageio==2.9.0
     - Pillow==11.0.0
     - imageio-ffmpeg==0.4.2
