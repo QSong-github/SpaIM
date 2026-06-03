@@ -72,7 +72,7 @@ The inference results will will be saved in './SpaIM_results/Dataset1/impute_sc_
 # Reference
 If you find this project is useful for your research, please cite:
 ```
-Wang Q, Li B, Liang J, Shi D, Zhang B, Song Q. DrugClaw and DrugAudit: A primary-source-grounded agent and authority-aware benchmark for drug-information question answering. arXiv. 2026; arXiv:2606.01434.
+Li B, Tang Z, Budhkar A, Liu X, Zhang T, Yang B, Su J, Song Q. SpaIM: single-cell spatial transcriptomics imputation via style transfer. Nature Communications. 2025 Aug 23;16(1):7861.
 ```
 
 ## Acknowledgments
