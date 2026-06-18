@@ -62,13 +62,13 @@ with torch.no_grad():
             'scx': seq,
             'st_style': st_style
         }
-    # print('SCX:', inputs['scx'].shape, len(st_style))
-    model.set_input(inputs, istrain=0)
-    out = model.inference()
-    impute_result = out['st_fake'].detach().cpu().numpy()
-    print("impute_result",impute_result.shape) #  (3482, 67798) torch.Size([3482, 67798])
-    eval_result = impute_result if eval_result is None else np.concatenate((eval_result, impute_result), axis=0)
-    print("eval_result", eval_result.shape)  # (3482, 77890) (3482, 77890)
+        # print('SCX:', inputs['scx'].shape, len(st_style))
+        model.set_input(inputs, istrain=0)
+        out = model.inference()
+        impute_result = out['st_fake'].detach().cpu().numpy()
+        print("impute_result",impute_result.shape) #  (3482, 67798) torch.Size([3482, 67798])
+        eval_result = impute_result if eval_result is None else np.concatenate((eval_result, impute_result), axis=0)
+        print("eval_result", eval_result.shape)  # (3482, 77890) (3482, 77890)
 
 
 eval_result = eval_result.T
@@ -77,5 +77,5 @@ eval_result[eval_result <0] = 0
 
 # print(gene_names.shape)  # 检查 gene_names 的形状
 # print(cell_names.shape)  # 检查 cell_names 的形状
-df1 = pd.DataFrame(eval_result, index=cell_names, columns=gene_names)
+df1 = pd.DataFrame(eval_result.T, index=cell_names, columns=gene_names)
 df1.to_pickle(os.path.join(opt.save_path, 'impute_sc_result_%d.pkl'%(opt.kfold)))
